@@ -1,0 +1,54 @@
+{
+    "name": "detailnet/dfw-searcg",
+    "description": "DETAIL Framework library for index based searching",
+    "type": "library",
+    "keywords": [
+        "dfw",
+        "detailnet",
+        "search"
+    ],
+    "homepage": "https://github.com/detailnet/dfw-search/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Wolf",
+            "email": "ivan.wolf@detailnet.ch"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6",
+        "squizlabs/php_codesniffer" : "~2.3",
+        "phpmd/phpmd": "~2.2",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Detail\\Search\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "DetailTest\\Search\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "!vendor",
+            "tests",
+            "*phpunit.xml",
+            ".coveralls.yml",
+            ".travis.yml",
+            "build.xml",
+            "build.properties",
+            "composer.phar"
+        ]
+    }
+}
